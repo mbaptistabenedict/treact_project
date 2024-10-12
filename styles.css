@@ -306,7 +306,6 @@ input:focus {
   text-align: left;
   font-size: 1.125rem;
   font-weight: 500;
-  width: 600px;
 }
 
 .quality__button {
@@ -702,22 +701,12 @@ p.p__testimonials {
   margin-top: 4px;
 }
 
-.name__plate {
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
-}
-
 button.test__slide--btn {
   background: #edf2f7;
   border-radius: 50%;
   padding: 15px;
   border: none;
   margin-right: 16px;
-}
-
-.button__name--plate {
-  width: 300px;
 }
 
 .img__nav {
@@ -809,7 +798,24 @@ button.right__end:hover {
 .footer {
   display: flex;
   background: #6414ff;
-  width: 100vw;
-  height: 600px;
-  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  margin: 6em 0 0 0;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.footer__bottom {
+  width: 80%;
+}
+
+.main__heading {
+  color: white;
+  text-transform: uppercase;
 }
