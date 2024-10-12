@@ -694,7 +694,6 @@ p.p__testimonials {
 .name__plate--container {
   display: flex;
   font-display: row;
-  width: 200%;
   overflow-x: hidden;
 }
 
@@ -803,4 +802,14 @@ button.right__end {
 button.right__end:hover {
   background: #f3f3f3;
   color: #6414ff;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  background: #6414ff;
+  width: 100vw;
+  height: 600px;
+  margin: 0 auto;
 }
