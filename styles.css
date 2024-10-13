@@ -734,10 +734,9 @@ button.test__slide--btn {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px;
+  padding: 8em;
   width: 100%;
   background-color: #6414ff;
-  height: 250px;
   margin: 0 auto;
   border-radius: 8px;
 }
@@ -834,6 +833,10 @@ li.li__footer {
   text-align: left;
 }
 
+li.li__footer:hover {
+  text-decoration: underline;
+}
+
 ul.footer__list {
   margin-bottom: 3em;
   text-align: left;
@@ -862,4 +865,227 @@ svg.socials {
   background-color: white;
   border-radius: 50%;
   padding: 6px;
+}
+
+/* TABLET */
+
+@media (max-width: 728px) {
+  .row {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .landing__container--full {
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .landing__header {
+    text-align: center;
+  }
+
+  .services__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .two-column__container {
+    width: 100%;
+  }
+
+  .quality-work__container {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .left__quality-work--container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features__heading,
+  .features__subheading,
+  p.quality-work,
+  .features__para.values__para,
+  .column__para.principle__para {
+    text-align: center;
+  }
+
+  button.quality__button {
+    margin-bottom: 3em;
+  }
+
+  .features__heading.steps__header.purple,
+  .quality-work__container.steps__container {
+    margin: 3em 0 3em 0;
+  }
+
+  .quality-work__container.steps__container {
+    margin: 0 auto;
+  }
+
+  .two__column--container {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .steps__headers {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0.875em 0 0.875em 0;
+  }
+
+  .values__graphic--container,
+  .landing__right--container.right__testimonials,
+  .features__heading.purple.testimonials__heading {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .features__heading.purple.testimonials__heading {
+    padding: 3em;
+    text-align: center;
+  }
+
+  .values__graphic {
+    margin-bottom: 3em;
+  }
+
+  .two__column--values--container {
+    flex-direction: column-reverse;
+  }
+
+  .features__subheading.values__subheading {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .left__values--container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .affordable__container--wrapper,
+  .pricing__container {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .affordable__container,
+  .landing__container--full.testimonials {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our__principles--heading,
+  .features__subheading,
+  .values__subheading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0 auto;
+  }
+
+  .features__para {
+    margin: 2em auto;
+    font-size: 0.875rem;
+  }
+
+  .column__para.column__para.principle__para {
+    width: 55%;
+  }
+
+  .slick {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature__heading.testimonial__heading {
+    text-align: center;
+    width: 100%;
+  }
+
+  p.p__testimonials {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .landing__right--container.right__testimonials {
+    display: flex;
+    font-display: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.675rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .feature__heading.testimonial__heading {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .name__plate,
+  .our__clients--loveUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+  }
+
+  .end__container--contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .left__end--contents {
+    margin-bottom: 2em;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .main__container {
+    width: calc(100% / 3);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 2em;
+  }
 }
