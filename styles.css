@@ -55,6 +55,44 @@ header {
   height: 90px;
 }
 
+.small__device--nav {
+  display: none;
+}
+
+button.small__nav {
+  background: none;
+  border: none;
+  position: relative;
+}
+
+.small__nav--popup {
+  margin: 0 auto;
+  position: fixed;
+  transform: translate(-80%);
+  width: 100%;
+  z-index: 100;
+}
+
+.small__nav--links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+  width: 100%;
+  border-radius: 1em;
+  border: 1px solid #7c8ba17b;
+  background-color: white;
+}
+
+.svg__nav {
+  display: block;
+  position: relative;
+  border: none;
+  color: #6414ff;
+}
+
 .nav__links {
   display: flex;
   justify-content: end;
@@ -870,6 +908,15 @@ svg.socials {
 /* TABLET */
 
 @media (max-width: 728px) {
+  .nav__links {
+    display: none;
+  }
+
+  .small__device--nav {
+    display: block;
+    position: relative;
+  }
+
   .row {
     justify-content: center;
     align-items: center;
@@ -1064,6 +1111,7 @@ svg.socials {
     justify-content: center;
     align-items: center;
     width: 80%;
+    margin: 0 auto;
   }
 
   .left__end--contents {
@@ -1071,6 +1119,10 @@ svg.socials {
     text-align: center;
     width: 100%;
     padding: 0;
+  }
+
+  button.end__btn.right__end {
+    margin-right: 0px;
   }
 
   .footer__top {
