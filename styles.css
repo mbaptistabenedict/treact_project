@@ -66,13 +66,16 @@ button.small__nav {
 }
 
 .small__nav--popup {
-  margin: 0 auto;
+  margin: 1.5em 1em;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  width: 100%;
   z-index: 100;
+  visibility: hidden;
+  transition: all 300ms ease;
+  opacity: 0;
+  transform: translate(100%);
 }
 
 .small__nav--links {
@@ -86,6 +89,21 @@ button.small__nav {
   border-radius: 1em;
   border: 1px solid #7c8ba17b;
   background-color: white;
+}
+
+button.close__menu {
+  position: absolute;
+  right: 2em;
+  top: 1em;
+  color: #6414ff;
+  background-color: transparent;
+  border: 0;
+}
+
+.menu--open .small__nav--popup {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
 }
 
 .svg__nav {
