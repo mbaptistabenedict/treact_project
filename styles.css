@@ -1015,7 +1015,6 @@ svg.socials {
   }
 
   .values__graphic--container,
-  .landing__right--container.right__testimonials,
   .features__heading.purple.testimonials__heading {
     max-width: 80%;
     margin: 0 auto;
@@ -1159,5 +1158,146 @@ svg.socials {
   .footer__bottom {
     flex-direction: column;
     gap: 2em;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+  .nav {
+    justify-content: space-around;
+  }
+
+  .get__started--container {
+    position: relative;
+    margin: 3em auto;
+  }
+
+  .get__started--btn {
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin-top: 1em;
+    padding: 1em 0;
+  }
+
+  .trusted__company--wrapper,
+  .trusted__company {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trusted__company--para,
+  .trusted__company--logos {
+    text-align: center;
+  }
+
+  .trusted__company--para {
+    margin-top: 10em;
+  }
+
+  .landing__image--wrapper {
+    margin-top: 4em;
+  }
+
+  .features__subheading {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .features__para {
+    width: 75%;
+    margin-top: 2em;
+  }
+
+  .our__principles--heading,
+  span.purple {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .slick {
+    margin-bottom: 3em;
+  }
+
+  .end__container--contents,
+  .left__end--contents,
+  .end__header {
+    width: 100%;
+  }
+
+  .end__container--contents {
+    padding: 2em;
+    margin: 4em 2em;
+  }
+
+  .right__end--contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .end__header {
+    font-size: 1.5rem;
+  }
+
+  .end__btn.left__end {
+    margin-right: 0px;
+    margin-bottom: 1em;
+  }
+
+  .footer {
+    margin-top: 0;
+    padding: 4em;
+  }
+
+  .features__subheading.quality__header,
+  .quality-work__container.steps__container,
+  .two__column--container {
+    width: 100%;
+  }
+
+  p.p__testimonials,
+  p.column__para.principle__para {
+    width: 100%;
+  }
+
+  h2.features__subheading,
+  h2.features__subheading.values__subheading {
+    text-align: center;
+    font-size: 1.875rem;
+    width: 100%;
+  }
+
+  .features__heading.purple.testimonials__heading {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+  }
+
+  .affordable__container--wrapper {
+    width: 100%;
+  }
+
+  .name__plate {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .main__container {
+    width: calc(100% / 2);
+  }
+
+  .footer__copyright {
+    text-align: center;
+  }
+
+  .landing__para {
+    text-align: center;
   }
 }
